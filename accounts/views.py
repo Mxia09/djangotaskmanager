@@ -42,7 +42,7 @@ def signup(request):
                 )
 
                 login(request, user)
-                return redirect("home")
+                return redirect("list_projects")
             else:
                 form.add_error("password", "Passwords do not match")
     else:
